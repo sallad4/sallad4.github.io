@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle Navigation</span>
+                </button>
+                <a class="navbar-brand" href="index.html">Lattitude</a>
+            </div>
+        
+        <!-- Collect the nav links, forms, and other content for togg∫ling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plot<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="max_temp.html">Max Temp</a></li>
+                            <li><a href="humidity.html">Humidity</a></li>
+                            <li><a href="cloudiness.html">Cloudiness</a></li>
+                            <li><a href="windspeed.html">Wind Speed</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comparison.html">Comparison</a></li>
+                    <li><a href="data.html" id="data_link">Data</a></li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+
+  <div class="container">
+      <div class="col-md-8">
+        <div class="box box-right">
+            <h2>Wind Speed</h2>
+                <hr>
+                <div class="thumbnail">
+                 <img src="LatitudeVsWindspeed.png" alt="Temperature Graph">
+                </div>
+                <section id="summary">
+                        <p>Wind speeds do not produce identifiable latitudinal patterns, however, they do provide some 
+                            observable patterns. For example, the vast majority of wind speed observations are from zero to 
+                            10 miles per hour. 
+                        </p>
+                 </section>
+            </div>
+      </div>
+      
+    <div class="col-md-4">
+        <div class="box box-right">
+            <h2>Visualizations</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3 col-md-6">
+                        <div class="thumbnail">
+                            <a href="max_temp.html">
+                                <img id="landing-viz" src="LatitudeVsTemperature.png" alt="Latitude vs. Temperature">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-6">
+                        <div class="thumbnail">
+                            <a href="humidity.html">
+                                <img id="landing-viz" src="LatitudeVsHumidity.png" alt="Latitude vs. Humidity">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-6">
+                        <div class="thumbnail">
+                            <a href="cloudiness.html">
+                                <img id="landing-viz" src="LatitudevsClouds.png" alt="Latitude vs. Cloudiness">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-6">
+                        <div class="thumbnail">
+                            <a href="windspeed.html">
+                                <img id="landing-viz" src="LatitudeVsWindSpeed.png" alt="Latitude vs. Wind Speed">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                  
+    </div>
+
+    <!-- Footer Links -->
+    <footer class="footer">
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href="https://bootcamp.ce.arizona.edu/data/"> University of Arizona - Bootcamp</a>
+        </div>
+
+    <!-- Footer -->
+    </footer>
+      
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
